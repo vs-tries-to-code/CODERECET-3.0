@@ -1,22 +1,9 @@
 import React from "react";
+import refreshImage from "../assets/refresh.png";
 
 export default function RefreshReboot() {
   return (
-    <div className="bg-custom-black px-8 lg:px-32 py-12 lg:py-16">
-      <div className="text-center">
-        <h1 className="font-hoops_brother text-5xl lg:text-7xl">
-          <span className="text-custom-white">REFRESH </span>
-          <span style={{ color: '#E6F85A' }}>IDEAS.</span>
-        </h1>
-        <h1 className="font-hoops_brother text-5xl lg:text-7xl mt-2">
-          <span className="text-custom-white">REBOOT </span>
-          <span style={{ color: '#E6F85A' }}>SOLUTIONS.</span>
-        </h1>
-      </div>
-    </div>
-  );
-}
-
+    <div className="flex flex-col xl:flex-row min-h-screen bg-custom-black text-custom-white border-custom-gray border-t border-b xl:items-stretch">
       {/* Left Side - Image */}
       <div className="ww-full xl:w-1/2 flex items-center justify-center p-4 xl:p-8">
         <div className="w-full h-full rounded-lg overflow-hidden p-2 bg-custom-black">

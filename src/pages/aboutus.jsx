@@ -4,7 +4,7 @@ function AboutUs() {
   return (
     <div
       id="about"
-      className="min-h-screen bg-custom-black flex justify-center items-start mx-auto w-full px-8 lg:px-32 py-16 lg:py-20"
+      className="min-h-screen bg-custom-black flex justify-center items-start mx-auto w-full px-8 lg:px-32 py-16 lg:py-24"
     >
       <div className="max-w-6xl w-full">
         {/* About Header */}
