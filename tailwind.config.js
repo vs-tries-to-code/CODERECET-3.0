@@ -51,6 +51,10 @@ module.exports = {
           '0%': { transform: 'translateY(-13rem) rotateZ(0deg)'},
           '50%': { transform: 'translateY(-13rem) rotateZ(90deg)'},
           '100%': { transform: 'translateY(-13rem) rotateZ(0deg)'}
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
         }
       }    
     }

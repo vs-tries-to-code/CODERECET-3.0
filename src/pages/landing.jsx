@@ -15,7 +15,7 @@ function LandingPage() {
   const blendyRef = useRef(null);
 
   useEffect(() => {
-    blendyRef.current = createBlendy({ animation: 'spring' });
+    blendyRef.current = createBlendy({ animation: 'dynamic' });
   }, []);
 
   useEffect(() => {
@@ -214,7 +214,9 @@ function LandingPage() {
               data-blendy-from="calendar"
               onClick={() => {
                 setShowCalendar(true);
-                blendyRef.current?.toggle('calendar');
+                requestAnimationFrame(() => {
+                  blendyRef.current?.toggle('calendar');
+                });
               }}
             >
               <div>
@@ -228,7 +230,9 @@ function LandingPage() {
               data-blendy-from="location"
               onClick={() => {
                 setShowLocation(true);
-                blendyRef.current?.toggle('location');
+                requestAnimationFrame(() => {
+                  blendyRef.current?.toggle('location');
+                });
               }}
             >
               <div>
@@ -255,9 +259,9 @@ function LandingPage() {
         </div>
       </div>
       {showLocation && createPortal(
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center animate-[fadeIn_0.3s_ease-out]">
           <div
-            className="absolute inset-0 bg-black/60"
+            className="absolute inset-0 bg-black/60 animate-[fadeIn_0.3s_ease-out]"
             onClick={() => {
               blendyRef.current?.untoggle('location', () => setShowLocation(false));
             }}
@@ -295,9 +299,9 @@ function LandingPage() {
         document.body
       )}
       {showCalendar && createPortal(
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center animate-[fadeIn_0.3s_ease-out]">
           <div
-            className="absolute inset-0 bg-black/60"
+            className="absolute inset-0 bg-black/60 animate-[fadeIn_0.3s_ease-out]"
             onClick={() => {
               blendyRef.current?.untoggle('calendar', () => setShowCalendar(false));
             }}
