@@ -23,7 +23,7 @@ function Footer() {
       <div className="w-full max-w-6xl mx-auto px-8 md:px-20 pt-16 pb-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="flex-1">
-            <div className="font-thomeo text-white text-6xl md:text-8xl lg:text-[7rem] mb-8">CODE RECET</div>
+                  <div className="font-thomeo text-white text-6xl md:text-8xl lg:text-[7rem] mb-8">Code Recet</div>
             <div className="text-black text-xl md:text-2xl mb-12 max-w-xl">CET's flagship hackathon for creative coders and innovators</div>
           </div>
           <div className="flex flex-col items-end gap-6 mt-8 md:mt-0">
