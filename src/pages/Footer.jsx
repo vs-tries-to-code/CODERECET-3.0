@@ -22,7 +22,10 @@ function Footer() {
       <div className="w-full max-w-5xl mx-auto bg-transparent p-8 md:p-12 flex flex-col gap-8">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           <div className="flex flex-col gap-6 w-full md:w-1/2">
-            <img src={logo} className="w-24 h-24 mb-2" alt="Code Recet Logo" />
+            <div className="flex items-center gap-4 mb-2">
+              <img src={logo} className="w-12 h-12" alt="Code Recet Logo" />
+              <span className="font-thomeo text-white text-3xl md:text-5xl">Code Recet</span>
+            </div>
             <div className="w-full h-[2px] bg-[#e6f85a] mb-4"></div>
             <nav className="flex flex-col gap-4 text-white text-lg font-poppins">
               <a href="#landing" className="flex items-center gap-2"><span className="text-[#e6f85a] text-xl">&gt;</span> Home</a>
