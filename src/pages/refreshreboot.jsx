@@ -1,5 +1,7 @@
 ﻿import React, { useEffect } from "react";
+
 import devfolioLogo from "../assets/Devfolio/Devfolio_Logo-White.png";
+import perksImg from "../assets/Perks.png";
 
 const cardData = [
   {
@@ -47,7 +49,7 @@ export default function RefreshReboot() {
 
       {/* Perks Image */}
       <div className="flex justify-center my-8">
-        <img src={require('../assets/Perks.png')} alt="Perks" className="max-w-full h-auto" />
+        <img src={perksImg} alt="Perks" className="max-w-full h-auto" />
       </div>
 
       {/* Devfolio Apply Button */}
