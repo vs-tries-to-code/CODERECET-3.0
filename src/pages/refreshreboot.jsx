@@ -38,11 +38,17 @@ export default function RefreshReboot() {
 
   return (
     <div className="bg-custom-black px-8 lg:px-32 py-16 lg:py-24 border-b border-custom-gray">
+
       <h1 className="font-thomeo text-custom-white text-5xl sm:text-6xl lg:text-8xl text-left leading-tight">
         REFRESH <span style={{ color: "#E6F85A" }}>IDEAS.</span>
         <br />
         REBOOT <span style={{ color: "#E6F85A" }}>SOLUTIONS.</span>
       </h1>
+
+      {/* Perks Image */}
+      <div className="flex justify-center my-8">
+        <img src={require('../assets/Perks.png')} alt="Perks" className="max-w-full h-auto" />
+      </div>
 
       {/* Devfolio Apply Button */}
       <div className="flex flex-col items-center justify-center mt-12">
