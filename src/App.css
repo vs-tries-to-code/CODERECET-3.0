@@ -102,3 +102,29 @@
     transform: translate(-50%, -50%) rotateY(324deg) translateZ(160px);
     animation-delay: -18s;
   }
+
+.perspective-container {
+  perspective: 1200px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
