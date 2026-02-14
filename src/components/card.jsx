@@ -22,19 +22,24 @@ export default function FAQCard({ number, question, answer }) {
           inset-0 
           backface-hidden">
           <div className="
-          relative 
-          h-full 
-          w-full 
-          rounded-[44px] 
-          bg-[linear-gradient(90deg,#6B6B6B_0%,#080808_100%)] 
-          px-10 
-          py-12 
-          overflow-hidden 
-          flex 
-          flex-col 
-          justify-between">
-            {/* Noise Overlay */}
-            <div className="absolute inset-0 opacity-[0.15] pointer-events-none mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+          relative
+          h-full
+          w-full
+          rounded-[44px]
+          px-10
+          py-12
+          overflow-hidden
+          flex
+          flex-col
+          justify-between"
+          style={{
+            background: 'linear-gradient(20deg, #FAFAFA80 -151.95%, #080808B3 55.32%, #6B6B6B 300.54%)'
+          }}>
+            <div className="absolute inset-0 pointer-events-none mix-blend-overlay" style={{
+              backgroundImage: `url('https://grainy-gradients.vercel.app/noise.svg')`,
+              opacity: 0.25,
+              filter: 'grayscale(1)',
+            }}></div>
             
             <span className="font-thomeo text-[200px] text-[#E6F85A] absolute bottom-[-40px] left-6 leading-none opacity-90">
               {number}
@@ -47,10 +52,25 @@ export default function FAQCard({ number, question, answer }) {
         </div>
 
         {/* back side*/}
-        <div className="absolute inset-0 h-full w-full rotate-y-180 backface-hidden">
-          <div className="h-full w-full rounded-[44px] bg-[#D1D1D1] px-10 py-12 flex items-center justify-center text-center overflow-hidden border border-black/10">
-            {/* Noise Overlay for consistency */}
-            <div className="absolute inset-0 opacity-[0.2] pointer-events-none mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+        <div className="absolute inset-0 h-full w-full rotate-y-180 backface-hidden rounded-[44px] overflow-hidden">
+          <div className="h-full w-full px-10 py-12 flex items-center justify-center text-center border border-black/10 relative">
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: "linear-gradient(202.8deg, #585858 -69.58%, #FFFFFA 65.58%, #2D2D2D 146.13%)",
+                zIndex: 1,
+              }}
+            ></div>
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                backgroundImage: "url('https://grainy-gradients.vercel.app/noise.svg')",
+                backgroundColor: "#515151",
+                opacity: 0.25,
+                mixBlendMode: "overlay",
+                zIndex: 2,
+              }}
+            ></div>
             
             <p className="font-tactic relative z-10 text-[#080808] text-[22px] font-medium leading-relaxed px-4">
               {answer}
