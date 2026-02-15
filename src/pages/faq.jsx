@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FAQCard from "../components/card";
+import TunnelBg from "../assets/Tunnel bg.png";
 
 const faqs = [
   {
@@ -39,9 +40,22 @@ const faqs = [
 
 export default function FAQSection() {
   return(
-   <section className="bg-[#1a1a1a] px-10 py-24">
+   <section className="bg-[#1a1a1a] px-10 py-24 relative overflow-hidden">
+
+
 
   <div className="mb-20">
+    <img 
+      src={TunnelBg} 
+      alt="Tunnel background" 
+      className="absolute bottom-[196.52px] left-[151px] w-[1421.98px] h-[1412.36px] opacity-1 pointer-events-none"
+    />
+
+    <img 
+      src={TunnelBg} 
+      alt="Tunnel background" 
+      className="absolute bottom-[-530px] right-[981px] w-[1421.98px] h-[1412.36px] opacity-1 pointer-events-none"
+    />
 
     <h3 className="
       font-hoops_brother
