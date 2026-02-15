@@ -12,6 +12,7 @@ export default function FAQCard({ number, question, answer }) {
           transformStyle: "preserve-3d",
         }}
       
+       //rotation on hovering with mouse on card
         onMouseEnter={(e) => e.currentTarget.style.transform = "rotateY(180deg)"}
         onMouseLeave={(e) => e.currentTarget.style.transform = "rotateY(0deg)"}
       >
